@@ -1,0 +1,50 @@
+/* Compartilhado pelo app e pelo gerador HTML; sem fontes ou recursos remotos. */
+.politica-privacidade {
+  --politica-fundo: #fffdf9;
+  --politica-texto: #352e2b;
+  --politica-borda: #e6ddd3;
+  --politica-aviso: #f7eee1;
+  --politica-link: #79523f;
+  color-scheme: light;
+  color: var(--politica-texto);
+  background: var(--politica-fundo);
+  border: 1px solid var(--politica-borda);
+  border-radius: 12px;
+  padding: clamp(16px, 4.5vw, 28px);
+  line-height: 1.75;
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+.politica-privacidade *, .politica-publica * { box-sizing: border-box; }
+article.politica-privacidade h1, article.politica-privacidade h2, article.politica-privacidade h3 { color: var(--politica-texto); line-height: 1.35; text-wrap: balance; }
+.politica-privacidade header h1, .politica-privacidade header h2 { margin: 0 0 20px; font-size: clamp(23px, 5.5vw, 30px); }
+.politica-privacidade section h2, .politica-privacidade h3 { font-size: 1.15rem; margin: 30px 0 12px; }
+.politica-privacidade p { margin: 0 0 16px; }
+.politica-privacidade li { margin-bottom: 10px; }
+.politica-privacidade ul { padding-left: 24px; }
+article.politica-privacidade a { color: var(--politica-link); text-decoration: underline; text-underline-offset: 3px; }
+.politica-privacidade a:focus-visible, .politica-publica nav a:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+.politica-privacidade dl { margin: 24px 0; }
+.politica-privacidade dl > div { padding: 10px 0; border-bottom: 1px solid var(--politica-borda); }
+.politica-privacidade dt { font-weight: 650; }
+.politica-privacidade dd { margin: 0; }
+.politica-privacidade .politica-minuta, .politica-privacidade .politica-pendencias { background: var(--politica-aviso); border-radius: 8px; padding: 16px; }
+.politica-privacidade .politica-pendencias h3 { margin-top: 0; }
+.politica-privacidade .politica-idioma { font-size: .92rem; }
+.politica-privacidade footer { border-top: 1px solid var(--politica-borda); margin-top: 28px; padding-top: 18px; }
+.politica-publica { margin: 0; padding: clamp(12px, 3vw, 28px); background: #faf7f2; font-family: 'Segoe UI', system-ui, sans-serif; }
+.politica-publica main { max-width: 820px; margin: 0 auto; }
+.politica-publica nav { margin: 0 0 18px; display: flex; flex-wrap: wrap; gap: 16px; }
+.politica-publica nav a { color: inherit; }
+@media (prefers-color-scheme: dark) {
+  .politica-privacidade {
+    --politica-fundo: #211d1b;
+    --politica-texto: #f2e9df;
+    --politica-borda: #62534a;
+    --politica-aviso: #3a3026;
+    --politica-link: #efc7ac;
+    color-scheme: dark;
+  }
+  .politica-publica { background: #181513; color: #f2e9df; }
+}
